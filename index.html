@@ -3,38 +3,30 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>เว็บของฉัน</title>
+  <title>หน้าแรก | เว็บของฉัน</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header>
-    <h1>สวัสดีครับ</h1>
-    <p>ยินดีต้อนรับสู่เว็บของผม</p>
+  <header class="site-header">
+    <div class="inner">
+      <a class="brand" href="index.html">เว็บของฉัน</a>
+      <nav>
+        <a href="index.html" aria-current="page">หน้าแรก</a>
+        <a href="about.html">เกี่ยวกับ</a>
+        <a href="gallery.html">แกลเลอรี</a>
+        <a href="contact.html">ติดต่อ</a>
+      </nav>
+    </div>
   </header>
 
   <main>
-    <section>
-      <h2>เกี่ยวกับฉัน</h2>
-      <p>เขียนแนะนำตัวหรือเนื้อหาของคุณตรงนี้</p>
-    </section>
-
-    <section>
-      <h2>แกลเลอรี</h2>
-      <div class="gallery">
-        <img src="images/photo.jpg" alt="รูปที่ 1">
-        <img src="images/photo.jpg" alt="รูปที่ 2">
-        <img src="images/photo.jpg" alt="รูปที่ 3">
-      </div>
-    </section>
-
-    <section>
-      <button id="btn">กดตรงนี้</button>
-      <p id="msg"></p>
-    </section>
+    <h1>สวัสดีครับ ยินดีต้อนรับ</h1>
+    <p class="lead">เขียนประโยคแนะนำเว็บของคุณสั้น ๆ ตรงนี้</p>
+    <p><a class="button" href="gallery.html">ดูแกลเลอรี</a></p>
   </main>
 
-  <footer>
-    <p>© 2026 เว็บของฉัน</p>
+  <footer class="site-footer">
+    <p>© <span id="year">2026</span> เว็บของฉัน</p>
   </footer>
 
   <script src="js/main.js"></script>
