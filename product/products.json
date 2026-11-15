@@ -1,11 +1,11 @@
 [
   {
-    "product_title": "แก้วเซรามิก",
-    "image": "/product/images/images-2.jpg"
-  },
-  {
     "product_title": "กระเป๋าผ้า",
     "image": "/product/images/bag.png"
+  },
+  {
+    "product_title": "แก้วเซรามิก",
+    "image": "/product/images/images-2.jpg"
   },
   {
     "product_title": "สมุดโน้ต",
