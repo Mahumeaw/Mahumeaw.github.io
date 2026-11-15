@@ -2,16 +2,16 @@
 const year = document.getElementById("year");
 if (year) year.textContent = new Date().getFullYear();
 
-// ดูรูปขยาย (หน้า gallery)
+// ดูรูปขยาย (หน้าสินค้า) - ใช้ได้กับรูปที่สร้างทีหลังด้วย
 const viewer = document.getElementById("viewer");
 if (viewer) {
   const big = viewer.querySelector("img");
-  document.querySelectorAll(".gallery img").forEach((img) => {
-    img.addEventListener("click", () => {
-      big.src = img.src;
-      big.alt = img.alt;
-      viewer.showModal();
-    });
+  document.addEventListener("click", (e) => {
+    const img = e.target.closest(".gallery img");
+    if (!img) return;
+    big.src = img.src;
+    big.alt = img.alt;
+    viewer.showModal();
   });
   viewer.addEventListener("click", () => viewer.close());
 }
