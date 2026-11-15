@@ -1,0 +1,21 @@
+media:
+  input: product/images
+  output: /product/images
+  rename: safe
+  extensions: [png, jpg, jpeg, webp]
+
+content:
+  - name: products
+    label: สินค้า
+    type: file
+    path: product/products.json
+    format: json
+    list: true
+    fields:
+      - name: product_title
+        label: ชื่อสินค้า
+        type: string
+        required: true
+      - name: image
+        label: รูป
+        type: image
